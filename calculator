@@ -1,0 +1,55 @@
+using System;
+namespace Calculater
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+
+        {
+            double result;
+            Console.WriteLine("Enter the  first number");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the  second number");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Symbol(+,-,*,/,^,s)");
+            string Symbol = Console.ReadLine();
+            switch (Symbol)
+            {
+                case "+":
+                    result = n1 + n2;
+                    Console.WriteLine("Addtion" + result);
+                    break;
+
+                case "-":
+                    result = n2 - n2;
+                    Console.WriteLine("Subtration" + result);
+                    break;
+                case "*":
+                    result = n1 * n2;
+                    Console.WriteLine("Multiplication" + result);
+                    break;
+                case "/":
+                    result = n1 / n2;
+                    Console.WriteLine("Divsion" + result);
+                    break;
+                case "^":
+
+                    result = (int)Math.Pow(n1, n2);
+                    Console.WriteLine("Power is :" + result);
+                    break;
+                case "s":
+                    result = Math.Sqrt(n1);
+                    Console.WriteLine("Square root n1 is :" + result);
+                    break;
+
+                default:
+                    Console.WriteLine("Wrong input");
+                    break;
+            }
+
+
+        }
+        
+    }
+ 
+}
